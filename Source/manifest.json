@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "CageFace",
+	"version": "0.1",
+	"description": "Replaces images of face with Nicholas Cage.",
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]
+}
+
